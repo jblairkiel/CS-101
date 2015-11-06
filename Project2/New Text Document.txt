@@ -1,0 +1,53 @@
+void hats::chooseMoveAgainstCPU(int curSticks, int bHats[150][150], int k){
+	//AI picks up random ball from hat # = to number of sticks left
+	int point1 = 0;
+	int maxArrayBall = 0;
+	while (arr[curSticks - 1][point1] != 0){
+		point1++;
+	}
+
+chooseCPUAgain:
+	rNum = rand() % point1;
+
+	//take stick according to ball
+	if ((1 <= arr[curSticks - 1][rNum] <= k) && (arr[curSticks - 1][rNum] <= curSticks) && ((rNum<150))){
+
+		//put ball next to hat
+		int point2 = 0;
+		while (bHats[curSticks - 1][point2] != 0){
+			point2++;
+		}
+		pointOfSub = point2;
+		ballLocation = arr[curSticks-1][rNum];
+		bHats[curSticks - 1][point2] = arr[curSticks - 1][rNum];
+		aiChoice = arr[curSticks - 1][rNum];
+
+		//if random ball is in the middle of the array
+		if (rNum != point1){
+			for (int i = rNum; i < point1; i++){
+				arr[curSticks - 1][i] = arr[curSticks - 1][i + 1];
+			}
+		}
+		else{
+			arr[curSticks - 1][rNum] = 0;
+		}
+		//cout << "AI selects " << aiChoice << "\n";
+
+		//handle single stick
+		if ((curSticks - aiChoice) == 1){
+			//cout << "There is " << curSticks - aiChoice << " stick on the board.\n";
+		}
+		else if ((curSticks - aiChoice) > 1) {
+			//cout << "There are " << curSticks - aiChoice << " sticks on the board.\n";
+		}
+		//printHats();
+		curSticks = curSticks - aiChoice;
+	}
+	else {
+		goto chooseCPUAgain;
+	}
+
+	//if chosen wrong ball
+
+	currentSticks = curSticks;
+}

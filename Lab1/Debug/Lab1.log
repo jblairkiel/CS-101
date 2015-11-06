@@ -1,0 +1,19 @@
+﻿Build started 10/7/2015 3:55:51 PM.
+     1>Project "f:\documents\visual studio 2013\Projects\helloworld\Lab1\Lab1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         F:\Program Files (x86)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\LabFiles\validate.cpp
+         validate.cpp
+     1>f:\documents\visual studio 2013\projects\labfiles\validate.cpp(37): warning C4129: 'D' : unrecognized character escape sequence
+     1>f:\documents\visual studio 2013\projects\labfiles\validate.cpp(37): warning C4129: 'V' : unrecognized character escape sequence
+     1>f:\documents\visual studio 2013\projects\labfiles\validate.cpp(37): warning C4129: 'P' : unrecognized character escape sequence
+     1>f:\documents\visual studio 2013\projects\labfiles\validate.cpp(37): warning C4129: 'h' : unrecognized character escape sequence
+     1>f:\documents\visual studio 2013\projects\labfiles\validate.cpp(37): warning C4129: 'L' : unrecognized character escape sequence
+     1>f:\documents\visual studio 2013\projects\labfiles\validate.cpp(37): warning C4129: 'e' : unrecognized character escape sequence
+       Link:
+         F:\Program Files (x86)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"f:\documents\visual studio 2013\Projects\helloworld\Debug\Lab1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"f:\documents\visual studio 2013\Projects\helloworld\Debug\Lab1.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"f:\documents\visual studio 2013\Projects\helloworld\Debug\Lab1.lib" /MACHINE:X86 Debug\validate.obj
+         Lab1.vcxproj -> f:\documents\visual studio 2013\Projects\helloworld\Debug\Lab1.exe
+     1>Done Building Project "f:\documents\visual studio 2013\Projects\helloworld\Lab1\Lab1.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.77

@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "helloworld", "helloworld\helloworld.vcxproj", "{03F78150-EAA8-4989-AAE9-78469D1FF518}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project2", "Project2\Project2.vcxproj", "{20D4B20D-8F37-4FAE-BE17-8498B1153EF0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab1", "Lab1\Lab1.vcxproj", "{D2F4BDE1-00F4-4799-8825-3F0D2E20C02D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedLab", "LinkedLab\LinkedLab.vcxproj", "{2FD1731C-BB7F-469F-8B23-AC7201B9252D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project4", "Project4\Project4.vcxproj", "{21C149B4-4024-4794-9836-9D6AA0C7ECD3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{DA7F81C5-5152-4509-B49A-F2FC9635B674}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03F78150-EAA8-4989-AAE9-78469D1FF518}.Debug|Win32.ActiveCfg = Debug|Win32
+		{03F78150-EAA8-4989-AAE9-78469D1FF518}.Debug|Win32.Build.0 = Debug|Win32
+		{03F78150-EAA8-4989-AAE9-78469D1FF518}.Release|Win32.ActiveCfg = Release|Win32
+		{03F78150-EAA8-4989-AAE9-78469D1FF518}.Release|Win32.Build.0 = Release|Win32
+		{20D4B20D-8F37-4FAE-BE17-8498B1153EF0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{20D4B20D-8F37-4FAE-BE17-8498B1153EF0}.Debug|Win32.Build.0 = Debug|Win32
+		{20D4B20D-8F37-4FAE-BE17-8498B1153EF0}.Release|Win32.ActiveCfg = Release|Win32
+		{20D4B20D-8F37-4FAE-BE17-8498B1153EF0}.Release|Win32.Build.0 = Release|Win32
+		{D2F4BDE1-00F4-4799-8825-3F0D2E20C02D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D2F4BDE1-00F4-4799-8825-3F0D2E20C02D}.Debug|Win32.Build.0 = Debug|Win32
+		{D2F4BDE1-00F4-4799-8825-3F0D2E20C02D}.Release|Win32.ActiveCfg = Release|Win32
+		{D2F4BDE1-00F4-4799-8825-3F0D2E20C02D}.Release|Win32.Build.0 = Release|Win32
+		{2FD1731C-BB7F-469F-8B23-AC7201B9252D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2FD1731C-BB7F-469F-8B23-AC7201B9252D}.Debug|Win32.Build.0 = Debug|Win32
+		{2FD1731C-BB7F-469F-8B23-AC7201B9252D}.Release|Win32.ActiveCfg = Release|Win32
+		{2FD1731C-BB7F-469F-8B23-AC7201B9252D}.Release|Win32.Build.0 = Release|Win32
+		{21C149B4-4024-4794-9836-9D6AA0C7ECD3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{21C149B4-4024-4794-9836-9D6AA0C7ECD3}.Debug|Win32.Build.0 = Debug|Win32
+		{21C149B4-4024-4794-9836-9D6AA0C7ECD3}.Release|Win32.ActiveCfg = Release|Win32
+		{21C149B4-4024-4794-9836-9D6AA0C7ECD3}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

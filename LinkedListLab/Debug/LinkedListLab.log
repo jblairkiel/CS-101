@@ -1,0 +1,12 @@
+﻿Build started 10/6/2015 8:22:23 PM.
+     1>Project "f:\documents\visual studio 2013\Projects\helloworld\LinkedListLab\LinkedListLab.vcxproj" on node 2 (Build target(s)).
+     1>Build:
+         make
+         'make' is not recognized as an internal or external command,
+         operable program or batch file.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.MakeFile.Targets(38,5): error MSB3073: The command "make" exited with code 9009.
+     1>Done Building Project "f:\documents\visual studio 2013\Projects\helloworld\LinkedListLab\LinkedListLab.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.04
