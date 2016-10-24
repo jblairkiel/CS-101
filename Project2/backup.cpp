@@ -109,9 +109,9 @@ chooseCPUAgain:
 	aiChoice = arr[curSticks - 1][rNum];
 	//take stick according to ball
 	//critical point to setup a succesful win by leaving cpu only 1 stick
-	if ((0 < arr[curSticks - 1][rNum] <= k) && (arr[curSticks - 1][rNum] <= curSticks) && ((0 <= rNum) && (rNum < 150))){
+	if ((0 < arr[curSticks - 1][rNum] <= k) && (arr[curSticks - 1][rNum] <= curSticks) && (0 <= rNum < 150)){
 
-		//put ball next to hat
+		//put ball next to hta
 		int point2 = 0;
 		while (bHats[curSticks - 1][point2] != 0){
 			point2++;
@@ -531,7 +531,7 @@ int main(int argc, char* argv[]){
 	cin >> projectPart;
 	if (projectPart == 1){
         int playAgain = 1;
-        while(playAgain == 1){
+        while(playAgain = 1){
 			curSticks = initSticks;
             cout << "\nThere are " << curSticks << " stick on the board.\n";
             //While sticks are on board play game.
@@ -665,8 +665,7 @@ int main(int argc, char* argv[]){
 						if (curSticks != 0){
 							playerSwitchInt = 1;
 						}
-						memset(tempArr, 0, sizeof(tempArr[0][0]) * 150 * 150);
-						//tempArr[150][150] = {};
+						tempArr[150][150] = {};
 						badSelection = true;
 					}
 				}
@@ -683,8 +682,7 @@ int main(int argc, char* argv[]){
 					}
 				}
 				hats.updateHats(tempArr, initSticks);
-				memset(tempArr, 0, sizeof(tempArr[0][0]) * 150 * 150);
-				//tempArr[150][150] = {};
+				tempArr[150][150] = {};
 			}
 
 			//Else throw away beside balls 
@@ -699,8 +697,7 @@ int main(int argc, char* argv[]){
 					}
 				}
 				hats.resetBalls(tempArr, initSticks);
-				memset(tempArr, 0, sizeof(tempArr[0][0]) * 150 * 150);
-				//tempArr[150][150] = {};
+				tempArr[150][150] = {};
 			}
 
 			//besides array renumbered
@@ -776,8 +773,7 @@ int main(int argc, char* argv[]){
 						if (curSticks != 0){
 							playerSwitchInt = 1;
 						}
-						memset(tempArr, 0, sizeof(tempArr[0][0]) * 150 * 150);
-						//tempArr[150][150] = {};
+						tempArr[150][150] = {};
 						badSelection = true;
 					}
 				}
@@ -804,8 +800,7 @@ int main(int argc, char* argv[]){
 					}
 				}
 				hats.updateHats(tempArr, initSticks);
-				//tempArr[150][150] = {};
-				memset(tempArr, 0, sizeof(tempArr[0][0]) * 150 * 150);
+				tempArr[150][150] = {};
 			}
 
 			//Else throw away beside balls 
@@ -820,8 +815,7 @@ int main(int argc, char* argv[]){
 					}
 				}
 				hats.resetBalls(tempArr, initSticks);
-				memset(tempArr, 0, sizeof(tempArr[0][0]) * 150 * 150);
-				//tempArr[150][150] = {};
+				tempArr[150][150] = {};
 
 				//make sure user does correct input
 			playAgain2:
