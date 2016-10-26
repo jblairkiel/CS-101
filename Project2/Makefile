@@ -18,6 +18,7 @@ besideHats.o:
 clean:
 	rm -f *.o
 	rm -fr heapsort.dSYM
+	rm -f ./sticks
 
 run:	clean sticks 
 	./sticks
