@@ -52,7 +52,7 @@ chooseCPUAgain:
 	aiChoice = arr[curSticks - 1][rNum];
 	//take stick according to ball
 	//critical point to setup a succesful win by leaving cpu only 1 stick
-	if ((0 < arr[curSticks - 1][rNum] <= k) && (arr[curSticks - 1][rNum] <= curSticks) && ((0 <= rNum) && (rNum < 150))){
+	if ( ((0 < arr[curSticks - 1][rNum]) && (arr[curSticks -1][rNum]) <= k) && (arr[curSticks - 1][rNum] <= curSticks) && ((0 <= rNum) && (rNum < 150))){
 
 		//put ball next to hat
 		int point2 = 0;
@@ -261,7 +261,7 @@ chooseAgain:
 	}
 	//take stick according to ball
     //cout<<"this is the choice of the computer "<<arr[curSticks-1][rNum]<<"\n";
-	if ((1 <= arr[curSticks - 1][rNum] <= k) && (arr[curSticks - 1][rNum] <= curSticks) && (0<aiChoice<k) && ((curSticks-arr[curSticks-1][rNum])>-1)){
+	if ( ((1 <= arr[curSticks - 1][rNum]) && (arr[curSticks -1][rNum] <= k)) && (arr[curSticks - 1][rNum] <= curSticks) && ((0<aiChoice) && (aiChoice<k)) && ((curSticks-arr[curSticks-1][rNum])>-1)){
 
 		//put ball next to hat
         int temp = 0;
@@ -329,19 +329,20 @@ void hats::resetBalls(int besideHats[150][150], int initSticks){
 void hats::printHats(){
 	int point1 = 0;
 	int point2 = 0;
-	int check = 0;
+	//int check = 0;
 
 	cout << "\nThe current Hats are\n";
 	while (arr[point1][point2] != 0){
 		point1++;
-		check = arr[point1][point2];
+		//check = arr[point1][point2];
 	}
 	for (int i = 0; i < point1; i++){
 		while (arr[i][point2] != 0){
 			point2++;
 		}
+		cout << "Sticks: " << i;
 		for (int j = 0; j < point2; j++){
-			cout << arr[i][j] << "  ";
+			cout << "[" << arr[i][j] << "] ";
 		}
 
 		cout << endl;
@@ -389,7 +390,7 @@ rePick:
 	rNum = rand() % k+1;
 
 	//make sure number is in range
-	if ((0 < rNum <= k) && (curSticks - rNum >= 0)){
+	if ( ((0 < rNum) && (rNum <= k)) && (curSticks - rNum >= 0)){
 		curSticks = curSticks - rNum;
 	}
 
