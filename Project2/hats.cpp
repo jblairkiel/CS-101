@@ -274,7 +274,7 @@ chooseAgain:
 		bHats[curSticks - 1][point2] = aiChoice;
 	    aiChoice = arr[curSticks - 1][rNum];
         temp = arr[curSticks - 1][rNum];
-        cout<<"AIChoice is "<<aiChoice;
+        cout<<"AIChoice is "<<aiChoice<<endl;
 
 		//if random ball is in the middle of the array
 		if (rNum != point1){
@@ -285,7 +285,7 @@ chooseAgain:
 		else{
 			arr[curSticks - 1][rNum] = 0;
 		}
-		cout << "AI selects " << temp<< "\n";
+		cout << "AI selects " << temp<< "\n"<<endl;
 		cout << '\n';
 
 		//handle single stick
@@ -326,7 +326,7 @@ void hats::resetBalls(int besideHats[150][150], int initSticks){
 }
 
 //prints the GUI for hats
-void hats::printHats(){
+void hats::printHats(int hatCount, int numSticks){
 	int point1 = 0;
 	int point2 = 0;
 	//int check = 0;
@@ -336,15 +336,30 @@ void hats::printHats(){
 		point1++;
 		//check = arr[point1][point2];
 	}
+
+	int tArr[hatCount][numSticks];
+	memset( tArr, 0, hatCount*numSticks*sizeof(int));
 	for (int i = 0; i < point1; i++){
 		while (arr[i][point2] != 0){
 			point2++;
 		}
-		cout << "Sticks: " << i;
+
+		//memset this
 		for (int j = 0; j < point2; j++){
-			cout << "[" << arr[i][j] << "] ";
+			//cout << "[" << arr[i][j] << "] ";
+			tArr[i][(arr[i][j])]++;
 		}
 
+		cout << endl;
+	}
+
+	for (int i = 0; i < point1; i++){
+		cout << "Sticks: "<< i+1 << " | ";
+		for (int j = 0; j < numSticks; j++){
+			if (tArr[i][j] != 0){
+				cout << j+1 << ":[" << tArr[i][j] << "] ";
+			}
+		}
 		cout << endl;
 	}
 }

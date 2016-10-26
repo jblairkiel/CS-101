@@ -131,7 +131,7 @@ int main(int argc, char* argv[]){
 		int rNum;
 		int aiChoice = 0;
 		int gameCounter = 0;
-		int numberOfTests = 1000;
+		int numberOfTests = 100;
 		int point2;
 		int bLocation;
 		bool badSelection = false;
@@ -214,7 +214,7 @@ int main(int argc, char* argv[]){
 				gameCounter++;
 
 				//Print the ball results of the train game
-				hats.printHats();
+				//hats.printHats(initSticks, maxChoiceSticks);
 			}
 
 			//Else throw away beside balls 
@@ -236,6 +236,7 @@ int main(int argc, char* argv[]){
 
 			//besides array renumbered
 			besideHats.resetAllBesideHats( maxChoiceSticks, initSticks);
+			hats.printHats(initSticks, maxChoiceSticks);
 			playerSwitchInt = 1;
 		}
 			

@@ -21,7 +21,7 @@ public:
 	void updateHats(int subArray[150][150], int initSticks);
 	void chooseMove(int curSticks, int besideHats[150][150], int k);
 	void resetBalls(int subArray[150][150], int initSticks);
-	void printHats();
+	void printHats(int hatCount, int numSticks);
 	int getBallLocation();
 	void setBallLocation(int location);
 	int getPointOfSub();
