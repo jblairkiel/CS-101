@@ -1,4 +1,7 @@
 #include "Hashtable.h"
+#include <iostream>
+#include <cstring>
+#include <cstdlib>
 
 /** @brief Constructor for a Hashtable that stores
 *	@param bucketsNum The number of "buckets the Hashtable will contain
@@ -39,7 +42,7 @@ string Hashtable::getCurrentTime(){
 	time_t now;
 	time(&now);
 	char curTime[26]; 
-	ctime_s(curTime, sizeof curTime, &now); //!Depending on the system, either use ctime_s() or ctime()
+	ctime(&now); //!Depending on the system, either use ctime_s() or ctime()
 	//string curTime;
 	//curTime = ctime(&now);
 	string tDay;

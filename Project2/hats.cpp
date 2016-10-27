@@ -2,6 +2,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <fstream>
+#include <string.h>
 #include "hats.h"
 
 using namespace std; 
