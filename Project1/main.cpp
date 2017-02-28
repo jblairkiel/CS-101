@@ -23,7 +23,8 @@ int main(int argc, char* argv[]){
 
 	//input.open(argv[2]);
 	Hashtable hTable = Hashtable(6000);
-	ifInput.open("sample.txt");
+	//ifInput.open("sample.txt");
+	ifInput.open(argv[1]);
 	if (ifInput.is_open()){
 
 		// while more lines exist

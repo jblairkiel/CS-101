@@ -14,4 +14,4 @@ clean:
 	rm -f ./project1
 
 run:	clean project1
-	./project1
+	./project1 sample.txt
