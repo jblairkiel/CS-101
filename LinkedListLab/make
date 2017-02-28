@@ -1,2 +1,0 @@
-all:
-	g++ validate.cpp -o main -lm

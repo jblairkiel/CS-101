@@ -8,6 +8,11 @@
 #include "besideHats.h"
 using namespace std;
 
+/********************
+ * Project 2
+ * "Sticks" game (Similiar to Nim)
+ * Blair Kiel
+ *******************/
 
 int main(int argc, char* argv[]){
 
