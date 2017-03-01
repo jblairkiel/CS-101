@@ -4,7 +4,7 @@
 //class for the balls set beside the hats
 class besideHats{
 private:
-	int arr[10][10] = {};
+	int arr[100][100] = {};
 public:
 	void initializebesideHats(int k, int initSticks);
 	int getHatPointer(int pointer1, int pointer2);

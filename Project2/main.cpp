@@ -149,9 +149,10 @@ int main(int argc, char* argv[]){
 		//Train AI first
 		cout << "Training AI, please wait...\n";
 
-		//Timer Module
-		//myClock clock;
-		//clock.startClock();
+		/*Timer Module
+		* myClock clock;
+		* clock.startClock();
+		*/
 
 		//Run trainer until it reaches the number of tests by winning that amount of games
 		while (gameCounter < numberOfTests){
@@ -258,7 +259,12 @@ int main(int argc, char* argv[]){
 
 				//player 1 turn
 				if (playerSwitchInt == 1){
-					cout << "Player 1: How many sticks do you take (1-" << maxChoiceSticks << ")? ";
+					if(maxChoiceSticks > curSticks){
+						cout << "Player 1: How many sticks do you take (1-" << curSticks << ")? ";
+					}
+					else{
+						cout << "Player 1: How many sticks do you take (1-" << maxChoiceSticks << ")? ";
+					}
 					cin >> chosenSticks;
 
 					//make sure chosensticks is between 1 and maxChoiceSticks
@@ -284,7 +290,13 @@ int main(int argc, char* argv[]){
 					}
 					//player chose incorrect amount
 					else {
-						cout << "Please enter a number between 1 and " << maxChoiceSticks << "\n";
+
+						if(maxChoiceSticks > curSticks){
+							cout << "Please enter a number between 1 and" << curSticks << "\n";
+						}
+						else{
+							cout << "Please enter a number between 1 and" << maxChoiceSticks << "\n";
+						}
 					}
 				}
 				//AI turn
