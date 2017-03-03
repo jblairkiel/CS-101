@@ -6,11 +6,16 @@
 using namespace std;
 
 struct node {
-		int vertex;		
-		int x;				
-		int y;
-		int weight;
-		node *next;
+	int vertex;		
+	int x;				
+	int y;
+	int weight;
+	node *next;
+};
+
+struct vert {
+	int vertex;
+	int distance;
 };
 
 struct edge {
@@ -31,10 +36,15 @@ class DGraph{
 		
 
 	public:
-		DGraph(int vertices, int edges);
+		DGraph();
+		void initialize(int vertices, int edges);
 		void addVertex(int vertex, int x, int y);
 		node* addEdge(int v1, int v2);
 		int calculateWeight(node *v1, node *v2);
+		void heapify(vertex *minHeap, int size, int i, int pos[]);
+		void buildHeap(vertex *minHeap, int size, int pos[]);
+		void decreaseKey(vertex *minHeap, struct vertex newNode, int pos[]);
+		void djikstra(int startPoint, int endPoint);
 		
 };
 #endif
