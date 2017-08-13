@@ -20,6 +20,8 @@ or
 make run
 ```
 
+**(Make sure to provide an input file argument!)**
+
 ## Project2
 
 Project 2 is an imitation on the mathematical game of Nim.  Based on logic, an 'AI' can be trained to 'understand' how many 'sticks' should be removed in order to leave the Human losing by being left with the last 'stick' to pickup. There is also an option to play against a friend.  
@@ -38,7 +40,16 @@ or
 make run
 ```
 ## Project3
-Linked List Lab that turned into a project.
+Linked List Lab that turned into a project.  Originally the program was meant to be a pseudo-compiler that checked for balanced carrots, parenthesis, curly brackets and square brackets.  I have since removed the carrot parsing, because it is near impossible to write a sound program in C++ that does not used pointers, comparisons or writes to Standard out (all which use unbalanced carrots).
+
+To compile and run
+```
+make
+./solution sample.cpp
+```
+
+**(Make sure to provide an input file argument!)**
+
 
 ## Project4
 Project 4 consist of taking a set of data containing Twitter posts in JSON format and store them in a hash table. Each post will contain three values: created_at, text, and screen_name.

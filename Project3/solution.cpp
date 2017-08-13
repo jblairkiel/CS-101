@@ -7,12 +7,15 @@
 int main(int argc, char* argv[]) {
 	
 	if(argc != 2) {
-		std::cout << "Usage: " << argv[0] << " <filename>" << std::endl;
+		std::cout << "\nPlease profile a file to read in values\n";
+		std::cout << "\nUsage: " << argv[0] << " <filename>" << std::endl;
 		return 1;
 	}
 	
-	char mappings[4][2] = {
-		{'<','>'},
+	/*Removed carrots, because they are used in
+	comparisons and points which do not match*/
+	char mappings[3][2] = {
+		//{'<','>'},
 		{'(',')'},
 		{'[',']'},
 		{'{','}'}
